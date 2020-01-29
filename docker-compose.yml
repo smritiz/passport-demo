@@ -6,6 +6,6 @@ services:
             - mongodbB
         ports:
             - '3003:3003'
-        mongodbB: 
+        mongodbB:
             image: mongo
         container_name: mongodb
