@@ -4,11 +4,8 @@ services:
         build: .
         depends_on:
             - mongodbB
-            - redis
         ports:
             - '3003:3003'
-        redis:
-            image: redis
         mongodbB: 
             image: mongo
         container_name: mongodb
