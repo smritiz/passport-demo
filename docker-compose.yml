@@ -9,6 +9,6 @@ services:
             - '3003:3003'
         redis:
             image: redis
-        mongodbB: null
-        image: mongo
+        mongodbB: 
+            image: mongo
         container_name: mongodb
