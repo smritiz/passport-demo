@@ -3,10 +3,10 @@ services:
     passport-app:
         build: .
         depends_on:
-            - mongodbB
+            - mongodb
         ports:
             - '3003:3003'
-        mongodbB:
+        mongodb:
             image: mongo
             ports: ['27017:27017']
             container_name: mongodb
